@@ -54,40 +54,63 @@
     src: url(https://fonts.gstatic.com/s/worksans/v9/QGYsz_wNahGAdqQ43Rh_fKDp.woff2) format('woff2');
 }
 
-body {
-    margin:0;
-}
-header {
-    background-color: lavender;
-    display: flexbox;
-    width: 100%;
-    height: 64px;
-    position: fixed;
-    
+html {
+    font-family: "Work Sans", Helvetica, sans-serif;
+    font-size: 16px;
+    background-color: silver;
 }
 
-.logo{
-    display: inline-flex;
+header {
+    max-height: 64px;
+    width: 100%;
+    position: fixed;
+    padding: 16px 24px;
+    z-index: 100;
+    font-family: "Playfair Display", Helvetica, sans-serif;
     align-items: center;
+    display: flex;
+    border-bottom: 1px solid black;
+    background-color: lavender;
+}
+
+body {
+    padding-top: 64px;
+}
+.logo,
+header h2,
+header li,
+header ul {
+    display: inline;
     
 }
 
 h2 {
-    color: gray;
-    font-family: "Playfair Display", Helvetica, sans-serif;
-    font-style: italic;
-    font-weight: 800;
     font-size: 2rem;
-    
+    font-style: italic;
+    color: gold;
 }
 
-#colmar {
-    font-style: normal;
-    color: indigo;
-    
-
+#colmar{
+    font-weight: 800;
+    color: purple;
 }
 
-nav li{ 
+header nav{
     display: inline-flex;
+    justify-content: space-between;
+}
+
+main {
+    display: flex;
+    max-width: 100%;
+    margin-top: 64px;
+    position: absolute;
+}
+
+.banner {
+    display: inline;
+}
+
+.imgcontainer {
+    display: inline-block;
 }
