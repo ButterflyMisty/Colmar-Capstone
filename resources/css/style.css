@@ -58,6 +58,9 @@ html {
     font-size: 16px;
 }
 
+body {
+    margin: 0;
+}
 header {
     background-color: lavender;
     display: flex;
@@ -122,9 +125,86 @@ nav li {
     font-size: 1.25rem;
 }
 
-
-
 #colmar {
     font-style: normal;
     color: darkgoldenrod;
+}
+
+/*Main styling begins here*/
+
+.banner,
+.info,
+.bb,
+.holder,
+.thesis {
+    display: flex;
+    
+}
+
+.banner {
+    margin-top: 64px;
+    align-items: center;
+}
+
+.imgcontainer {
+    width: 60%;
+    margin: 32px 24px;
+    padding-top: 32px;
+}
+.button {
+    background-color: indigo;
+    text-align: center;
+    color: gray;
+}
+
+.button p {
+    font-size: 1.5rem;
+    padding: 8px auto;
+}
+.banner,
+.thesis {
+    background-color: goldenrod;
+}
+
+.info,
+.cta {
+    background-color: gray;
+}
+
+.practice {
+    max-width: 60%;
+    padding:32px 24px;
+}
+
+.holder {
+    padding: 16px;
+}
+
+.bb {
+    flex-direction: column;
+    justify-content: space-between;
+    width: 40%;
+    margin: 16px auto 32px 0;
+}
+
+
+p {
+    font-size: 1.25rem;
+}
+.videobox {
+    width: 60%;
+    padding: 0 24px 24px 24px;
+}
+
+.thesis {
+    flex-wrap: wrap;
+}
+.thesishead {
+    width: 100%;
+    text-align: center;
+    padding: 32px auto;
+}
+
+.thumbs {
+    
 }

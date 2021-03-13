@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
     <title>Colmar Academy</title>
 </head>
-
+    <body>
     <!-- Header is 64 px high (16 auto 16 24?)-->
     <header>
         <!--Logo image and school name, align left 24px pad, 32 px font and logo-->
@@ -30,7 +30,7 @@
             </ul>
         </nav>
     </header>
-    <body>
+    
         <main>
             <!--this is probably a flexbox-->
             <div class="banner">
@@ -62,7 +62,7 @@
                     <!--40% of parent, border left side, 3x px top/bottom pad, has 3 children-->
                     <div class=holder>
                         <div class=frame>
-                            <img src="resources/images/information-main.jpg"> <!--aligned left, inline block? or is it more flexy stuff? 35%w auto h - same for all img-->
+                            <img src="resources/images/information-orientation.jpg"> <!--aligned left, inline block? or is it more flexy stuff? 35%w auto h - same for all img-->
                         </div>
                         <div class=text><!--65% wide-->
                             <h3>Orientation date</h3>
@@ -139,9 +139,13 @@
                     </div>
                 </div>
             </div>
+            
             <div class="thesis">
-                <div class="video"> <!--60% of container, align left, 32px 24 px pad/margin-->
-                    <video controls src="resources/videos/thesis.mp4">Video not available</video><!--60%of parent, 24px bottom pad-->
+                <div class="thesishead">
+                    <h2>Thesis Exhibit</h2>
+                </div>
+                <div class="videobox"> <!--60% of container, align left, 32px 24 px pad/margin-->
+                    <video controls width="60%" rc="resources/videos/thesis.mp4">Video not available</video><!--60%of parent, 24px bottom pad-->
                     <h3>Reimagine Urban</h3>
                     <p>"Curabitur vitae libero in ipsum porttitor consequat. Aliquam et commodo lectus,nec consequat nequae. Sed non accumsan urna. Phasellus sed consequat ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."
                 </div>
