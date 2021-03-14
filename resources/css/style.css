@@ -74,7 +74,6 @@ header {
     padding: 16px 24px 16px 24px;
     border-bottom: 1px solid indigo;
     font-family: "Playfair Display", Helvetica, sans-serif;
-    
     color: indigo;
 }
 
@@ -136,7 +135,8 @@ nav li {
 .info,
 .bb,
 .holder,
-.thesis {
+.thesis,
+.cta {
     display: flex;
     
 }
@@ -146,11 +146,19 @@ nav li {
     align-items: center;
 }
 
-.imgcontainer {
+/*.imgcontainer {
+    background-color: aliceblue;
+    width: 60%;
+    margin: 32px 24px;
+    padding-top: 32px;
+}*/
+
+.banner img {
     width: 60%;
     margin: 32px 24px;
     padding-top: 32px;
 }
+
 .button {
     background-color: indigo;
     text-align: center;
@@ -162,12 +170,12 @@ nav li {
     padding: 8px auto;
 }
 .banner,
-.thesis {
+.cta{
     background-color: goldenrod;
 }
 
 .info,
-.cta {
+.thesis {
     background-color: gray;
 }
 
@@ -176,8 +184,11 @@ nav li {
     padding:32px 24px;
 }
 
-.holder {
+.holder,
+.guestholder {
     padding: 16px;
+    display: flex;
+    align-items: center;
 }
 
 .bb {
@@ -206,5 +217,39 @@ p {
 }
 
 .thumbs {
-    
+   padding: 16px 16px;
+   display: flex;
+   
+}
+
+.frame {
+  
+    width: 35%;
+    background-color: aliceblue;
+    overflow: visible;
+    padding: 16px 16px;
+}
+
+.text {
+    max-width: 65%;
+    padding: 16px 16px;
+}
+
+.holder .frame img,
+.guestholder .frame img {
+    width: 100%;
+    object-fit: contain;
+}
+
+.cta{
+    justify-content: space-around;
+    align-content: space-around;
+}
+
+.ctahead {
+    justify-self: center;
+}
+.course {
+    padding: 32px 32px;
+    background-color: goldenrod;
 }
