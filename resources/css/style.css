@@ -55,11 +55,13 @@
 }
 
 html {
+    font-family: 'Work Sans', Helvetica, sans-serif;
     font-size: 16px;
 }
 
 body {
     margin: 0;
+    
 }
 header {
     background-color: lavender;
@@ -136,39 +138,48 @@ nav li {
 .bb,
 .holder,
 .thesis,
-.cta {
+.cta,
+.fisma,
+.study {
     display: flex;
     
 }
 
 .banner {
     margin-top: 64px;
+    padding-right: 32px;;
     align-items: center;
+    text-align: center;
+    
 }
 
-/*.imgcontainer {
-    background-color: aliceblue;
-    width: 60%;
-    margin: 32px 24px;
-    padding-top: 32px;
-}*/
+
 
 .banner img {
-    width: 60%;
-    margin: 32px 24px;
-    padding-top: 32px;
+    margin-top: 32px;
+    padding: 32px 24px;
+    width: 60%
+}
+
+.learn {
+    width: 40%;
+    padding-left: 24px;
+    padding-right: 32px;
+    
 }
 
 .button {
     background-color: indigo;
     text-align: center;
+    border: 3px solid gray;
+    border-radius: 5px;
     color: gray;
+    width: fit-content;
+    margin-left: 32%;
+    padding: 8px 48px;
 }
 
-.button p {
-    font-size: 1.5rem;
-    padding: 8px auto;
-}
+
 .banner,
 .cta{
     background-color: goldenrod;
@@ -184,50 +195,45 @@ nav li {
     padding:32px 24px;
 }
 
-.holder,
-.guestholder {
+.event,
+.spevent {
     padding: 16px;
     display: flex;
     align-items: center;
 }
 
-.bb {
+.bulletin {
     flex-direction: column;
     justify-content: space-between;
     width: 40%;
-    margin: 16px auto 32px 0;
+    margin: 16px 24px;
 }
-
 
 p {
     font-size: 1.25rem;
 }
-.videobox {
+
+.show {
     width: 60%;
-    padding: 0 24px 24px 24px;
+    display: flex;
+    flex-direction: column;
+    margin: 32px 24px;
 }
 
+video {
+    width: 100% !important;
+    height: auto !important;
+    
+}
 .thesis {
+    display: flex;
     flex-wrap: wrap;
 }
 .thesishead {
     width: 100%;
     text-align: center;
-    padding: 32px auto;
-}
-
-.thumbs {
-   padding: 16px 16px;
-   display: flex;
-   
-}
-
-.frame {
-  
-    width: 35%;
-    background-color: aliceblue;
-    overflow: visible;
-    padding: 16px 16px;
+    margin-top: 32px;
+    margin-bottom: 32px;
 }
 
 .text {
@@ -235,21 +241,49 @@ p {
     padding: 16px 16px;
 }
 
-.holder .frame img,
-.guestholder .frame img {
-    width: 100%;
-    object-fit: contain;
-}
 
 .cta{
-    justify-content: space-around;
-    align-content: space-around;
+    padding: 32px 72px;
+    flex-wrap: wrap;
+    
 }
 
 .ctahead {
-    justify-self: center;
+    width: 100%;
+    text-align: center;
+
 }
+
+
 .course {
-    padding: 32px 32px;
-    background-color: goldenrod;
+    background-color: gray;
+    margin: 32px;
+    width: fit-content;
+    flex: 1 1 25%;
+    padding-bottom: 24px;;
 }
+
+.course img {
+   height: auto;
+   width: 100%;
+   padding-bottom: 16px;
+}
+
+.course h3,
+.course p {
+    margin: 16px;
+    padding: 8px;
+}
+
+.projects {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+}
+
+.fisma,
+.study {
+    align-items: center;
+}
+
+.fisma
